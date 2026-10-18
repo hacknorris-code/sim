@@ -1,0 +1,38 @@
+<style>:root{color-scheme:dark}</style>
+<div style="display:flex;flex-direction:row;width:100%;height:100%">
+<form>
+    <fieldset>
+        <legend>Choose options:</legend>
+        
+        <input type="number" id="width" name="W" value="0" />
+        <label for="width">width diff</label><br />
+        
+        <input type="number" id="height" name="H" value="0" />
+        <label for="height">height diff</label><br />
+        
+        <input type="number" id="count" name="C" value="500" min="1" />
+        <label for="count">count of random pixels</label><br />
+        
+        <input type="number" id="radius" name="R" value="20" min="0" />
+        <label for="radius">g radius</label><br />
+        
+        <input type="number" id="offset" name="O" value="1" min="0" />
+        <label for="offset">color offset</label><br />
+        
+        <input type="number" id="groups" name="B" value="4" min="1" />
+        <label for="groups">count of groups</label><br />
+        
+        <input type="number" id="x" name="X" value="0" min="0" />
+        <label for="x">x number</label><br />
+        
+        <input type="number" id="y" name="Y" value="0" min="0" />
+        <label for="y">y number</label><br />
+        
+        <input type="checkbox" id="toggle" name="T" value="1"/>
+        <label for="toggle">separation toggle</label><br /><br />
+        
+        <input type="submit" formaction="./c.html" formtarget="main" formmethod="get"/>
+    </fieldset>
+</form>
+<iframe name="main" src="./c.html" style="width:100%;height:100%;flex:1;"></iframe>
+</div>
